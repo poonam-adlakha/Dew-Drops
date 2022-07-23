@@ -1,0 +1,65 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#387d13, #93bb8b);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dew {
+    position: absolute;
+    width: 11em;
+    height: 10em;
+    background: transparent;
+    border: 1.3px solid rgba(9, 63, 12, 0.1);
+    box-shadow: 5px 10px 25px rgba(9, 63, 12, 0.1) inset,
+        10px 20px 10px rgba(9, 63, 12, 0.2),
+        15px 20px 10px rgba(9, 63, 12, 0.1),
+        -5px -15px 15px rgba(255, 255, 255, 0.9) inset;
+    animation: shake linear 2s infinite;
+}
+
+.dew:before {
+    content: '';
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    width: 1.3em;
+    height: 1.5em;
+    background: rgba(211, 219, 225, 0.7);
+    transform: rotate(320deg);
+    animation: shake linear 2s infinite;
+}
+
+.dew:after {
+    content: '';
+    position: absolute;
+    left: 60%;
+    top: 28%;
+    width: 0.7em;
+    height: 0.6em;
+    background: rgba(244, 248, 248, 0.7);
+    animation: shake linear 2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        border-radius: 70% 80% 75% 65%;
+    }
+
+    50% {
+        border-radius: 60% 50% 65% 80%;
+    }
+
+    100% {
+        border-radius: 70% 80% 75% 65%;
+    }
+}
