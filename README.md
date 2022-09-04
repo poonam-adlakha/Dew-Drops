@@ -1,5 +1,7 @@
 Dew Drops 
 
+Created with pure CSS
+
 [Weblink](https://dew-drops.netlify.app/)
 
 
