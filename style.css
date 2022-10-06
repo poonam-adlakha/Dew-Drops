@@ -2,28 +2,22 @@ body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(#387d13, #93bb8b);
-}
-
-.container {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
     overflow: hidden;
 }
 
 .dew {
+    top: 40%;
+    left: 45%;
     position: absolute;
     width: 11em;
     height: 10em;
     background: transparent;
     border: 1.3px solid rgba(9, 63, 12, 0.1);
-    box-shadow: 5px 10px 25px rgba(9, 63, 12, 0.1) inset,
+    box-shadow: 
+        5px 10px 25px rgba(9, 63, 12, 0.1) inset,
         10px 20px 10px rgba(9, 63, 12, 0.2),
         15px 20px 10px rgba(9, 63, 12, 0.1),
-        -5px -15px 15px rgba(255, 255, 255, 0.9) inset;
+       -5px -15px 15px rgba(255, 255, 255, 0.9) inset;
     animation: shake linear 2s infinite;
 }
 
